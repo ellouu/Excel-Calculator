@@ -4,7 +4,7 @@ import subprocess
 
 
 def open_excel_calculator():
-    excel_file = r"C:\Users\Production-AI\PycharmProjects\pythonProject\Elisabet\EXCEL\calculator\calculator.xlsm"
+    excel_file = r" " # your excel file path inside the ""
 
     try:
         if os.path.exists(excel_file):
@@ -17,7 +17,7 @@ def open_excel_calculator():
         print(f"✗ Error opening Excel: {e}")
 
 
-log_path = r"C:\Users\Production-AI\PycharmProjects\pythonProject\Elisabet\EXCEL\calculator\calculator_log.txt"
+log_path = r" " # your log txt file path inside the "" (if you want one)
 
 
 print("Excel Calculator Controller")
@@ -56,4 +56,5 @@ try:
         time.sleep(0.1)
 
 except KeyboardInterrupt:
+
     print("\nStopped monitoring.")
